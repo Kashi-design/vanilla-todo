@@ -1,0 +1,83 @@
+/* 1. Reset: Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 2. Body: Center everything on the screen */
+body {
+    background-color: #f3f4f6; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* 3. The Card: The white box holding our app */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Prevent it from getting too wide */
+}
+
+h1 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* 4. Input Group: Making the input and button sit side-by-side */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1; /* Take up all available space */
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3b82f6; /* Blue border when typing */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3b82f6; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* 5. The List Styling */
+ul {
+    list-style: none; /* Remove bullet points */
+}
+
+li {
+    background: #f9fafb;
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between; /* Space between text and delete button */
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
